@@ -41,7 +41,7 @@ const generateImageURL = (src: string, width: number) => {
 
   if (
     process.env.storePicturesInWEBP === true &&
-    ["JPG", "JPEG", "PNG"].includes(extension.toUpperCase())
+    ["JPG", "JPEG", "PNG", "AVIF"].includes(extension.toUpperCase())
   ) {
     processedExtension = "WEBP";
   }
